@@ -3,6 +3,8 @@
     justify-content: center;
     align-items: center;
 } */
+/* Defolt */
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
  * {
@@ -15,23 +17,240 @@
     box-sizing: border-box;
  }
 
+img{
+   width: 100%;
+}
+
+
+/* Comon Style */
+ .continar{
+   width: 100%;
+   max-width: 1200px;
+   margin: auto;
+ }
+
  body{
     font-family: 'Open Sans', sans-serif;
     background-color: #f5f5f5;
  }
 
+.button{
+   background-color: #FD6E0A;
+   color: #fff;
+   padding: 15px 25px;
+   border-radius: 5px;
+   border: none;
+   font-weight: bold;
+   /* font-size: 22px; */
+   cursor: pointer;
+}
+
+.contactBtn{
+   background: none;
+   color: #FD6E0A;
+   border: 1px solid #FD6E0A;
+
+}
+
+
+/* NavBar Style */
+
  .navclass{
     display: flex;
     justify-content: space-between;
+    padding: 10px 8px;
+    /* background-color: red; */
+    /* background-color: red; */
  }
+
+.logo-r{
+   color: #FD6E0A;
+}
 
 .navclass ul{
     display: flex;
     list-style: none;
-    gap: 10px;
+    gap: 40px;
+    align-items: center;
+    font-size: 15px;
 }
 
 .navclass ul a{
     text-decoration: none;
     color: #333;
+}
+
+
+/* Hero Section Style */
+
+.hero-section {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   /* width: ;
+   height: 100vh; */
+   background-color: #fff8f3;
+}
+
+.hero-text-conten h1{
+   font-size: 40px;
+   font-weight: bold;
+   margin-bottom: 8px;
+}
+
+.hero-text-conten h2{
+   font-size: 25px;
+   font-weight: 600px;
+   color: #757575;
+}
+
+.hero-text-conten p {
+   font-size: 15px;
+   font-weight: 400;
+}
+
+.hero-left-btn{
+   padding-top: 15px;
+}
+
+/* Hero Style end */
+
+/* About Section Style start */
+.aboutCard{
+   display: flex;
+   justify-content: space-around;
+   gap: 8px;
+}
+
+.about-section{
+   background-color: #fff8f3;
+   margin: 70px auto;
+   text-align: center;
+   border-radius: 10px;
+   padding: 100px 100px;
+}
+
+.about-section p{
+   margin: 10px 0;
+   color: #757575;
+}
+
+.aboutCard h2{
+   font-size: 20px;
+   font-weight: 700;
+   margin-bottom: 10px;
+}
+
+.aboutCard .acardBox{
+   padding: 5px;
+}
+
+
+/* Card Box */
+
+.imgIconDiv img{
+   width: auto;
+}
+
+.cardBoxPrants{
+   display: flex;
+   gap: 8px;
+   padding: 50px 0;
+}
+
+.whatIDoDiscription{
+   text-align: center;
+}
+
+.whatIDoDiscription p{
+   margin: 0 185px;
+   color: #757575;
+}
+
+.cardbox{
+   box-shadow: 2px 2px 15px -3px #b8b8b8;
+   padding: 30px;
+   border-radius: 8px;
+   margin: 15px;
+   text-align: left;
+}
+
+.cardbox p{
+   color: #757575;
+   /* margin: 10px; */
+}
+
+.cardbox h2{
+   padding: 20px 0px;
+   font-size: 21px;
+}
+
+.cardbox img{
+   width: 40px;
+}
+
+/* Card Box End */
+
+/* CV Style */
+
+.resumeSection{
+   display: flex;
+   gap: 190px;
+}
+
+.buttonDiv {
+   display: flex;
+   justify-content: center;
+   padding: 50px 0;
+}
+
+.resumePrants > h1{
+   text-align: center;
+   padding-bottom: 70px;
+   font-size: 30px;
+}
+
+.cvClass > h1{
+   font-size: 25px;
+   padding-bottom: 20px;
+   color: #474747;
+}
+
+.mastarsDiv{
+   padding: 15px 0;
+   border-bottom: 1px solid #d1d1d1;
+}
+.mastarsDiv > h1{
+   font-size: 20px;
+   color: #474747;
+}
+.mastarsDiv > h2{
+   padding: 15px 0;
+   font-size: 18px;
+   color: #757575;
+   
+}
+
+.mastarsDiv p{
+   color: #757575;
+}
+
+.mastarsDiv:last-child{
+   border: none;
+}
+
+/* CV Style End */
+
+/* My work Protfolio Style Start */
+.protfolioImages {
+    column-count: 3;
+    column-gap: 20px;
+}
+
+.protfolioImages img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+    break-inside: avoid;
 }
